@@ -151,7 +151,51 @@ input[type=checkbox]:checked:before {
   text-decoration: line-through;
 } 
 
+@media (min-width: 270px) and (max-width:329px) {
+  .logo{
+    padding-left: 8%;
+  }
+  .logoText{
+    font-size: 30px;
+  }
+  .today{
+    font-size: 20px;
+  }
+  .date{
+    font-size: 10px;
+  }
 
+  .container{
+    width: 100%;
+    margin: 0;
+    position: initial;
+  }
+  .inpText {
+    margin-left: 2%;
+  }
+
+  .tick{
+    margin-left: 10px;
+  }
+  .inpText {
+    font-size: 23px;
+    width: 65%;
+  }
+  .inpDiv {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .list{
+    font-size: 19px;
+  }
+  .plusAndDel {
+    margin-right: 4%;
+    font-size: 35px;
+  }
+  .deleteIcon{
+    font-size: 30px;
+  }
+}
 @media (min-width: 330px) and (max-width:500px) {
 
   .logoText{
