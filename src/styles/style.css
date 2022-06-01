@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(173,255,47,1) 26%, rgba(209,209,209,1) 78%);
+}
+.headerBlock{
+  width: 100%;
+  height: 150px;
+  display: table;
+}
+
+.logo{
+height: 100%;
+display: table-cell;
+vertical-align: middle;
+padding-left: 10%;
+}
+
+.currentDate{
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 10%;
+  text-align: center;
+  color: #202c2d;
+}
+
+.logoText{
+  font-size: 70px;
+  font-family: 'Anton', sans-serif;
+  color: #202c2d;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
+.today{
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.date{
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+.text{
+  text-decoration: line-through;
+}
+
+.container{
+  width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 22%;
+    left: 30%;
+    margin: -50px 0 0 -100px;
+}
+
+.tick{
+    vertical-align: middle;
+    margin: 0 10px 7px 10%;   
+}
+
+input[type=checkbox] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  content: none;
+}
+
+input[type=checkbox]:before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-size: 15px;
+  color: transparent !important;
+  background: #ffffff;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type=checkbox]:checked:before {
+  background: #2b00ff;
+  color: rgb(255, 255, 255) !important;
+}
+
+
+.inpDiv{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.list{
+  font-size: 30px; 
+  margin-bottom: 20px;
+  font-family: 'Mukta', sans-serif;
+}
+
+
+.deleteIcon{
+  color: red;
+  cursor: pointer;
+  vertical-align: middle;
+  float: right;
+  margin-right: 10%;
+  font-size: 34px;
+  
+}
+
+.inpText{
+  font-size: 30px;
+  margin-left: 10%;
+  padding-left: 15px;
+  width: 60%;
+  box-shadow: 0px 2px 3px 1px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+}
+
+.plusAndDel{
+    color: black;
+    cursor: pointer;
+    vertical-align: middle;
+    float: right;
+    margin-right: 9%;
+    font-size: 40px;
+    border: none;
+    background: transparent
+}
+.plusAndDel :hover{
+  color: aqua;
+}
+.checkbox {
+  display: inline-block; 
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px #ddd solid;
+  margin-right: 4px;
+  text-decoration: line-through;
+} 
+
+.checkbox--active {
+  text-decoration: line-through;
+} 
+
+
+@media (min-width: 330px) and (max-width:500px) {
+
+  .logoText{
+    font-size: 40px;
+  }
+  .today{
+    font-size: 30px;
+  }
+  .date{
+    font-size: 15px;
+  }
+
+  .container{
+    width: 100%;
+    margin: 0;
+    position: initial;
+  }
+  .inpText {
+    margin-left: 2%;
+  }
+
+  .tick{
+    margin-left: 10px;
+  }
+  .inpText {
+    font-size: 23px;
+    width: 70%;
+  }
+  .inpDiv {
+    margin-top: 15px;
+    margin-bottom: 60px;
+  }
+  .list{
+    font-size: 29px;
+  }
+  .plusAndDel {
+    margin-right: 4%;
+  }
+}
+
+@media (min-width: 501px) and (max-width:900px) {
+  .logoText {
+    font-size: 55px;
+  }
+  .today {
+    font-size: 45px;
+  }
+  .container {
+    width: 100%;
+    left: 20%;
+  }
+  .plusAndDel {
+    margin-right: 4%;
+  }
+
+  .container {
+    position: initial;
+    margin: 0;
+  }
+  .inpText {
+    font-size: 35px;
+}
+.list{
+  font-size: 35px;
+}
+}
+
+@media (min-width: 901px) and (max-width:1400px) {
+  .tick {
+    margin: 0 10px 7px 5%;
+  }
+
+  .inpText {
+    margin-left: 5%;
+  }
+  .container{
+    width: 70%;
+  }
+  .inpText {
+    font-size: 50px;
+  }
+  .list {
+    font-size: 50px;
+  }
+  .plusAndDel{
+    margin-top: 8px;
+    font-size: 50px;
+  }
+}
