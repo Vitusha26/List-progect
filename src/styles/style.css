@@ -147,7 +147,7 @@ input[type=checkbox]:checked:before {
   text-decoration: line-through;
 } 
 
-.checkbox--active {
+.crossedOut{
   text-decoration: line-through;
 } 
 

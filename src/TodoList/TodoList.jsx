@@ -24,13 +24,13 @@ export default function TodoList() {
       },
     ]);
   
-    const addTodo = (text) => {
-      const newTodos = [...todos, { text }];
+    const addTodo = (newText) => {
+      const newTodos = [...todos, newText ];
       setTodos(newTodos);
     };
     
     const removeTodo = (index) => {
-      setTodos(todos.filter(p=> p.id !== index.id))
+      setTodos(todos.filter(obj=> obj.id !== index.id))
     };
   
     return (

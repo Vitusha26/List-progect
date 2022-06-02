@@ -7,7 +7,7 @@ export default function TodoListItem(props) {
     return (
       <div className="list">
         <input className='tick' type="checkbox" onChange={() => setChecked(!checked)}></input>{" "}
-        <label className={`${checked ? "checkbox--active" : ""}`}aria-hidden="true">
+        <label className={`${checked ? "crossedOut" : ""}`}aria-hidden="true">
           {props.todo.text}
         </label>
         <button className='plusAndDel' onClick={() => props.removeTodo(props.todo)}>

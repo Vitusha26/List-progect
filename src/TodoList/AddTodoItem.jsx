@@ -1,33 +1,26 @@
 import React, { useState } from 'react'
-import { ImPlus } from "react-icons/im";
-
+import Input from "./Input";
 
 export default function AddTodoItem({ addTodo }) {
   
-    const [value, setValue] = useState("");
+    const [text, setText] = useState("");
   
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      if (!value) return;
-      addTodo(value);
-      setValue("");
+    const handleSubmit = () => {
+      const newText = {
+        id: Date.now(),
+        text
+      }
+      if(text){
+        addTodo(newText)
+        setText('')
+      }else{
+        alert('Please type your todo')
+      }
     };
   
     return (
       <div className='inpDiv'>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className="inpText"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-          placeholder="Type an item"
-        />
-
-        <button className='plusAndDel'>
-          <ImPlus />
-        </button>
-      </form>
+      <Input handleSubmit={handleSubmit} text={text} setText={setText}/>
       </div>
     );
   }
